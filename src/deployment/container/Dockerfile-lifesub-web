@@ -49,3 +49,4 @@ USER nginx
 EXPOSE ${EXPORT_PORT}
 
 CMD ["nginx", "-g", "daemon off;"]
+

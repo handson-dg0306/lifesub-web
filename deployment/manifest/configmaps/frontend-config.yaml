@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-runtime-config
+data:
+  runtime-env.js: |
+    window.__runtime_config__ = {
+      MEMBER_URL: 'http://dg0306.20.249.184.228.nip.io/api/auth',
+      MYSUB_URL: 'http://dg0306.20.249.184.228.nip.io/api/mysub',
+      RECOMMEND_URL: 'http://dg0306.20.249.184.228.nip.io/api/recommend'
+    };
